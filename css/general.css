@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400&display=swap");
+
+:root {
+  --text-primary: #0e0e0e;
+  --text-secondary: #fefefe;
+  --color-visited: #990033;
+  --color-hover: #fa0f5a;
+  --color-primary: #cc0000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.RobotoMono {
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.body-container {
+  max-width: 900px;
+}
+
+.icon {
+  height: 24px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-visited);
+}
+
+a:hover,
+.logo:hover {
+  color: var(--color-hover);
+}
+
+.post-card {
+  border-left: 2px solid black;
+  padding-left: 8px;
+  color: var(--text-primary);
+}
+
+a:visited .post-card {
+  color: var(--color-visited);
+  border-left-color: var(--color-visited);
+}
+
+.post-card p {
+  color: var(--text-primary);
+}
+
+a:hover .post-card {
+  color: var(--color-hover);
+  border-left-color: var(--color-hover);
+}
+
+@media screen and (max-width: 719px) {
+  .body-container {
+    max-width: 80vw;
+  }
+}

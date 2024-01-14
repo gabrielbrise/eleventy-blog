@@ -1,0 +1,98 @@
+.navigation-btn {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.navigation-btn:hover .line-3,
+.navigation-btn.nav-show .line-3 {
+  transition: all 0.4s ease;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.navigation-btn:hover .line-1,
+.navigation-btn.nav-show .line-1 {
+  transition: all 0.4s ease;
+  transform: translateY(8px) rotate(45deg);
+  opacity: 0;
+}
+
+.navigation-btn:hover .line-2,
+.navigation-btn.nav-show .line-2 {
+  transition: all 0.4s ease;
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navigation-btn.nav-show > * {
+  background-color: var(--text-secondary);
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  position: absolute;
+  height: 1px;
+  width: 24px;
+  right: 0;
+  background-color: var(--text-primary);
+}
+
+.line-1 {
+  top: 8px;
+}
+
+.line-2 {
+  bottom: 8px;
+}
+
+.line-3 {
+  top: 50%;
+}
+
+.nav-modal {
+  display: none;
+  transition: all 0.2s ease;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-hover);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-modal.nav-show {
+  display: flex;
+  transition: all 1s ease;
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+}
+
+.nav-modal .nav-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-modal a {
+  color: var(--text-secondary);
+}
+
+.nav-modal a:hover {
+  color: var(--color-primary);
+}
