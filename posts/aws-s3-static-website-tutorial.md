@@ -2,7 +2,7 @@
 title: How to host your static website with AWS S3
 description: A tutorial to remind myself of the steps I took to get a static website running with AWS S3 + Custom Domain + SSL Certificate
 date: 2024-01-11
-tags: post
+tags: ["post", "tutorial"]
 ---
 
 # How to host your static website on AWS S3

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400&display=swap");
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: gray solid 1px;
+  justify-content: space-between;
+}
+
+.header > * {
+  width: 100%;
+}
+
+.header > :last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.RobotoMono {
+  font-family: "Roboto Mono", monospace;
+}
+
+.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #0e0e0e;
+}
+
+.logo svg {
+  height: 32px;
+  width: 20px;
+}
+.bar {
+  color: #aaa;
+}
+
+.logo span {
+  padding-left: 8px;
+}
+
+.logo:hover {
+  color: red;
+}
+
+.header a:hover {
+  transition: all 0.15s ease;
+  color: red;
+}
+
+.header i {
+  font-size: 24px;
+  padding: 0 4px;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container {
+  max-width: 900px;
+}

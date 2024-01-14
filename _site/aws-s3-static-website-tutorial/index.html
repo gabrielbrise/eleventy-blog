@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/bundle.css" />
+    <title>GABRIEL DEV</title>
   </head>
   <body>
-    <header><h1>Hi there people!</h1></header>
-    <main><h1>How to host your static website on AWS S3</h1>
+    <div class="body-container">
+      <header class="header">
+        <a class="logo" href="/">
+          <svg>
+            <use xlink:href="/logo.svg#img" href="/logo.svg#img"></use>
+          </svg>
+          <span>GABRIEL NS</span
+          ><span class="RobotoMono" style="translate: -2px -2px">|</span
+          ><span class="RobotoMono" style="translate: -4px -1px">dev</span></a
+        >
+        <ul>
+          <a href="/">Home</a>
+          <span class="bar">|</span>
+          <a href="/tutorials">Tutorials</a>
+          <span class="bar">|</span>
+          <a href="/about">About</a>
+        </ul>
+        <ul>
+          <a href="https://www.linkedin.com/in/gabrielbrise/" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/gabrielbrise"
+            ><i class="fa fa-github"></i>
+          </a>
+        </ul>
+      </header>
+      <main><h1>How to host your static website on AWS S3</h1>
 <h2>Introduction</h2>
 <p>Every now and then I decide to make a website simple enough to be static. Using the buckets from AWS S3 you can &quot;quickly&quot; set-up your website, however, to properly set-up it with a certificate and your own domain, there are a few extra steps that I always forget how to do. Thus, I'm making this article to help me in the future and hopefully help others too.</p>
 <h2>Create a new S3 bucket</h2>
@@ -58,5 +84,12 @@
 <li>Go make yourself a sandwich and hopefully in a few minutes you'll be able to reach your website throuh your custom domain with HTTPS</li>
 </ul>
 </main>
+    </div>
   </body>
+  <footer>
+    <script
+      src="https://kit.fontawesome.com/788e4ddebb.js"
+      crossorigin="anonymous"
+    ></script>
+  </footer>
 </html>
