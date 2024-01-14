@@ -3,43 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="scripts/nav-modal.js"></script>
     <link rel="stylesheet" href="/bundle.css" />
     <title>GABRIEL DEV</title>
   </head>
   <body>
     <div class="body-container">
-      <header class="header">
-        <a class="logo" href="/">
-          <svg>
-            <use xlink:href="/logo.svg#img" href="/logo.svg#img"></use>
-          </svg>
-          <span>GABRIEL NS</span
-          ><span class="RobotoMono" style="translate: -2px -2px">|</span
-          ><span class="RobotoMono" style="translate: -4px -1px">dev</span></a
-        >
-        <ul>
-          <a href="/">Home</a>
-          <span class="bar">|</span>
-          <a href="/tutorials">Tutorials</a>
-          <span class="bar">|</span>
-          <a href="/about">About</a>
-        </ul>
-        <ul>
-          <a
-            class="icon"
-            href="https://www.linkedin.com/in/gabrielbrise/"
-            target="_blank"
-          >
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a class="icon" href="https://github.com/gabrielbrise"
-            ><i class="fa fa-github"></i>
-          </a>
-        </ul>
+      <header>
+        <div class="header header-desktop">
+          {% include 'logo.html' %}
+          <ul>
+            <a href="/">Home</a>
+            <span class="bar">|</span>
+            <a href="/tutorials">Tutorials</a>
+            <span class="bar">|</span>
+            <a href="/about">About</a>
+          </ul>
+          <ul>
+            <a
+              class="icon"
+              href="https://www.linkedin.com/in/gabrielbrise/"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="icon" href="https://github.com/gabrielbrise"
+              ><i class="fa fa-github"></i>
+            </a>
+          </ul>
+        </div>
+        <div class="header header-mobile">
+          {% include 'logo.html' %}
+          {% include 'nav-btn.html' %}
+        </div>
       </header>
-      <main>{{ content }}</main>
-    </div>
+      <main>{{ content }}</main>      
   </body>
+  {% include 'nav-modal.html' %}
   <footer>
     <script
       src="https://kit.fontawesome.com/788e4ddebb.js"
