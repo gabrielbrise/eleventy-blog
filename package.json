@@ -5,12 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "deploy": "node deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@aws-sdk/client-cloudfront": "^3.490.0",
+    "@aws-sdk/client-s3": "^3.490.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
