@@ -73,8 +73,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fafafa;
 }
 
 .body-container {
   max-width: 900px;
+}
+
+.icon {
+  height: 24px;
 }
