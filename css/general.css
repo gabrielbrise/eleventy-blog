@@ -59,11 +59,6 @@ a:hover,
   color: var(--text-primary);
 }
 
-a:visited .post-card {
-  color: var(--color-visited);
-  border-left-color: var(--color-visited);
-}
-
 .post-card p {
   color: var(--text-primary);
 }

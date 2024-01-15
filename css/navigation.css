@@ -96,3 +96,7 @@
 .nav-modal a:hover {
   color: var(--color-primary);
 }
+
+.nav-modal ul {
+  padding-left: 0;
+}
