@@ -4,39 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="/scripts/nav-modal.js"></script>
+    <script type="text/javascript" src="/scripts/date.js"></script>
     <link rel="stylesheet" href="/bundle.css" />
     <title>GABRIEL DEV</title>
   </head>
   <body>
     <div class="body-container">
-      <header>
-        <div class="header header-desktop">
-          {% include 'logo.html' %}
-          <ul>
-            <a href="/">Home</a>
-            <span class="bar">|</span>
-            <a href="/tutorials">Tutorials</a>
-            <span class="bar">|</span>
-            <a href="/about">About</a>
-          </ul>
-          <ul>
-            <a
-              class="icon"
-              href="https://www.linkedin.com/in/gabrielbrise/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a class="icon" href="https://github.com/gabrielbrise"
-              ><i class="fa fa-github"></i>
-            </a>
-          </ul>
-        </div>
-        <div class="header header-mobile">
-          {% include 'logo.html' %}
-          {% include 'nav-btn.html' %}
-        </div>
-      </header>
+      {% include 'components/header.html' %}
       <main>{{ content }}</main>      
   </body>
   {% include 'nav-modal.html' %}

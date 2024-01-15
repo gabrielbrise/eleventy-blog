@@ -1,7 +1,7 @@
 ---
 title: First Post
 description: Welcome to my coding blog, I hope you'll find something useful around here
-date: 2024-01-10
+timestamp: 1705095045000
 tags: post
 ---
 
