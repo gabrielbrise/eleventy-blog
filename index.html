@@ -2,7 +2,7 @@
 layout: layout.html
 ---
 
-{% for post in collections.post %}
+{% for post in collections.post | post.data.timestamp %}
 <a href="{{ post.url }}">
   <div class="post-card">
     <h2>{{post.data.title}}</h2>

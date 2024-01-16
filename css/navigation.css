@@ -6,20 +6,38 @@
   z-index: 99;
 }
 
-.navigation-btn:hover .line-3,
+@media (min-width: 720px) {
+  .navigation-btn:hover .line-3,
+  .navigation-btn.nav-show .line-3 {
+    transition: all 0.4s ease;
+    transform: rotate(45deg) translateY(-1px);
+  }
+
+  .navigation-btn:hover .line-1,
+  .navigation-btn.nav-show .line-1 {
+    transition: all 0.4s ease;
+    transform: translateY(8px) rotate(45deg);
+    opacity: 0;
+  }
+
+  .navigation-btn:hover .line-2,
+  .navigation-btn.nav-show .line-2 {
+    transition: all 0.4s ease;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
 .navigation-btn.nav-show .line-3 {
   transition: all 0.4s ease;
   transform: rotate(45deg) translateY(-1px);
 }
 
-.navigation-btn:hover .line-1,
 .navigation-btn.nav-show .line-1 {
   transition: all 0.4s ease;
   transform: translateY(8px) rotate(45deg);
   opacity: 0;
 }
 
-.navigation-btn:hover .line-2,
 .navigation-btn.nav-show .line-2 {
   transition: all 0.4s ease;
   transform: translateY(-8px) rotate(-45deg);
@@ -99,4 +117,10 @@
 
 .nav-modal ul {
   padding-left: 0;
+}
+
+.nav-modal ul a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 32px;
 }

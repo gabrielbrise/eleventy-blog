@@ -4,4 +4,6 @@ function ToggleModal() {
 
     var modal = document.getElementById("nav-modal")
     modal.classList.toggle("nav-show")
+
+    document.body.classList.toggle("overflow-h")
 }

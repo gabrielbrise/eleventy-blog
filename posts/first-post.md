@@ -3,6 +3,7 @@ title: First Post
 description: Welcome to my coding blog, I hope you'll find something useful around here
 timestamp: 1705095045000
 tags: post
+layout: post
 ---
 
 # First Post

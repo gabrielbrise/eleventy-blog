@@ -73,3 +73,7 @@ a:hover .post-card {
     max-width: 80vw;
   }
 }
+
+.overflow-h {
+  overflow: hidden;
+}

@@ -1,0 +1,39 @@
+.footer-content {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-content a:visited,
+.footer-content a {
+  color: var(--text-primary);
+}
+
+.footer-links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-links li a {
+  padding: 12px;
+}
+
+.footer-content p {
+  padding-left: 12px;
+  padding-bottom: 8px;
+}
+
+.footer-disclaimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo svg {
+  width: 20px;
+  height: 34px;
+}
