@@ -1,0 +1,14 @@
+---
+layout: index.html
+permalink: /news.html
+---
+
+{% for post in collections.post | post.data.timestamp %}
+<a href="{{ post.url }}">
+  <div class="post-card">
+    <h2>{{post.data.title}}</h2>
+    <span class="date">{{post.data.formatedDate}}</span>
+    <p>{{ post.data.description }}</p>
+  </div>
+</a>
+{% endfor %}

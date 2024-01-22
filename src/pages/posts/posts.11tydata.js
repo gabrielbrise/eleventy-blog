@@ -1,4 +1,4 @@
-var dateHelper = require('../scripts/date.js')
+var dateHelper = require('../../scripts/date.js')
 
 module.exports = {
     eleventyComputed: {

@@ -13,10 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@aws-sdk/client-cloudfront": "^3.490.0",
-    "@aws-sdk/client-s3": "^3.490.0"
+    "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
