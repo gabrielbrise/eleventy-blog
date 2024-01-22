@@ -81,7 +81,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-hover);
+  background-color: var(--color-primary);
 }
 
 @keyframes fadeIn {
@@ -112,7 +112,7 @@
 }
 
 .nav-modal a:hover {
-  color: var(--color-primary);
+  color: var(--text-secondary);
 }
 
 .nav-modal ul {

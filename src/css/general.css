@@ -3,9 +3,8 @@
 :root {
   --text-primary: #0e0e0e;
   --text-secondary: #fefefe;
-  --color-visited: #990033;
-  --color-hover: #fa0f5a;
-  --color-primary: #cc0000;
+  --color-primary: #fa0f5a;
+  --bg-primary: #fafafa;
 }
 
 h1,
@@ -23,12 +22,12 @@ h6 {
 
 body {
   font-family: "Roboto Mono", monospace;
-  color: #0e0e0e;
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
+  background-color: var(--bg-primary);
 }
 
 .body-container {
@@ -40,17 +39,17 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--text-primary);
   text-decoration: none;
 }
 
 a:visited {
-  color: var(--color-visited);
+  color: var(--text-primary);
 }
 
 a:hover,
 .logo:hover {
-  color: var(--color-hover);
+  color: var(--color-primary);
 }
 
 .post-card {
@@ -64,8 +63,8 @@ a:hover,
 }
 
 a:hover .post-card {
-  color: var(--color-hover);
-  border-left-color: var(--color-hover);
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
 }
 
 @media screen and (max-width: 719px) {

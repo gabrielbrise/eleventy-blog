@@ -2,7 +2,7 @@
   display: flex;
   min-height: 40px;
   align-items: center;
-  border-bottom: gray solid 1px;
+  border-bottom: var(--text-primary) solid 1px;
   justify-content: space-between;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .header a:hover {
-  color: var(--color-hover);
+  color: var(--color-primary);
 }
 
 .logo svg {
